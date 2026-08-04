@@ -103,4 +103,4 @@ Deux portails distincts :
 > 💡 Contexte : les invités consommaient ~75% de la bande passante Wi-Fi, d'où l'importance de restreindre leur accès.
 
 ---
-
+[⬅ Retour au README](../README.md) | [Voir les résultats ➡](02-results.md)
