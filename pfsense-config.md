@@ -109,4 +109,4 @@ www.cine974.com/streaming/
 `DNSBL > Update` → cocher `Update` → `Run`.
 
 ---
-[⬅ Config switch](switch-config.md) | [Retour au README](../README.md)
+
