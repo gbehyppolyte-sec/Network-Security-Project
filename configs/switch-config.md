@@ -71,4 +71,4 @@ Switch(config-if)#switchport mode trunk
 
 ---
 
-
+[⬅ Retour au README](../README.md) | [Config pfSense ➡](pfsense-config.md)
