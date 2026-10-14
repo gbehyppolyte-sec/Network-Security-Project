@@ -1,2 +1,0 @@
-
-Les images du projet

@@ -86,7 +86,7 @@ MJL-Network-Security-Project/
 ├── configs/
 │   ├── switch-config.md        # Commandes CLI Cisco
 │   └── pfsense-config.md       # Étapes de configuration pfSense
-└── assets/images/              # Captures d'écran (à compléter)
+└── images/                     # Captures d'écran du projet
 ```
 
 ---

@@ -12,6 +12,10 @@
 
 ➡️ Isolation entre VLANs confirmée.
 
+![Test de connectivité entre VLANs](../images/TestConnectivite.png)
+
+![Ping bloqué entre VLANs](../images/ping-vlan.PNG)
+
 ---
 
 ## 2. Test du portail captif
@@ -40,6 +44,8 @@ Address:  10.10.10.1   # adresse virtuelle renvoyée par PfBlockerNG
 
 ➡️ La résolution réelle est interceptée par PfBlockerNG.
 
+![Résolution DNS interceptée](../images/Nslookup.png)
+
 ### Accès à un site de streaming bloqué
 
 1. Avertissement de sécurité (certificat non fiable, trafic intercepté) ;
@@ -56,6 +62,8 @@ Powered by: pfBlockerNG DNSBL
 ```
 
 ➡️ Blocage effectif et journalisé (IP client, référent, user-agent).
+
+![Page de blocage DNSBL](../images/pageBlock.png)
 
 ---
 

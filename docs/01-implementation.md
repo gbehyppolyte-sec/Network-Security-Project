@@ -20,6 +20,16 @@
            192.168.10.0/24 192.168.20.0/24 192.168.30.0/24
 ```
 
+Architecture existante avant le projet, avec un seul réseau plat :
+
+![Architecture existante](../images/architecture-existante.png)
+
+Architecture cible avec segmentation VLAN :
+
+![Architecture VLAN cible](../images/ArchitectureVLAN.png)
+
+![Architecture détaillée](../images/ArchitectureModifie.png)
+
 ## 2. Équipements utilisés
 
 | Équipement | Rôle |
@@ -54,6 +64,20 @@
    - Gi3/2 → VLAN 40
 4. Configuration d'un lien **trunk (802.1Q)** sur le port Gi0/0 relié à pfSense.
 
+Sécurisation du switch et création des VLANs en CLI :
+
+![Sécurisation du switch](../images/password.png)
+
+![Création des VLANs](../images/creationVlan.png)
+
+Affectation des ports par VLAN :
+
+![Affectation des ports VLAN 20](../images/affectationPort20.png)
+
+![Affectation des ports VLAN 30](../images/affectationPort30.png)
+
+![Affectation des ports VLAN 40](../images/affectationPort40.png)
+
 ---
 
 ## 5. Installation et configuration de pfSense
@@ -68,6 +92,14 @@
 4. Affectation de chaque VLAN à une interface logique ;
 5. Activation et adressage de chaque interface (ex : IT → 192.168.10.1/24) ;
 6. Création du pool DHCP par VLAN.
+
+Importation de l'appliance pfSense dans GNS3 et déclaration d'une interface VLAN :
+
+![Importation de l'appliance pfSense](../images/importationImage.png)
+
+![Affectation d'une interface VLAN](../images/AffectationVlanLogique.png)
+
+![Configuration de la passerelle](../images/gateway.png)
 
 ---
 
@@ -90,6 +122,18 @@ Deux portails distincts :
 
 > ⚠️ Le VLAN **IT** n'est pas soumis au portail captif (accès direct réservé aux administrateurs).
 
+![Configuration de la zone du portail captif](../images/zonecaptif.png)
+
+![Configuration générale du portail](../images/CONFportal.png)
+
+![URL de redirection après authentification](../images/RedirectUrl.png)
+
+![Serveur d'authentification](../images/server.png)
+
+Page de connexion présentée aux utilisateurs STAFF et INVITE :
+
+![Page du portail captif](../images/portalCaptive.png)
+
 ---
 
 ## 7. Optimisation de la bande passante (PfBlockerNG)
@@ -101,6 +145,8 @@ Deux portails distincts :
 5. Appliquer les configurations (`Update > Run`).
 
 > 💡 Contexte : les invités consommaient ~75% de la bande passante Wi-Fi, d'où l'importance de restreindre leur accès.
+
+![Configuration du groupe DNSBL](../images/configurationDNSBL.png)
 
 ---
 [⬅ Retour au README](../README.md) | [Voir les résultats ➡](02-results.md)
